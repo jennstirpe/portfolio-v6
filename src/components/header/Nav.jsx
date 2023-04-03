@@ -1,13 +1,13 @@
-
+import { StyledNav } from "./Nav.styled"
 
 export default function Nav() {
   return (
-    <nav>
-      <ul>
-        <li>Projects</li>
-        <li>Contact</li>
-        <li>About</li>
+    <StyledNav>
+      <ul className="nav-list">
+        <li><button className="nav-item">Projects</button></li>
+        <li><button className="nav-item">Contact</button></li>
+        <li><button className="nav-item">About</button></li>
       </ul>
-    </nav>
+    </StyledNav>
   )
 }
