@@ -11,10 +11,10 @@ export default function Heading() {
         
         <ul className="socials">
           <li className="social">
-            <a href="https://www.linkedin.com/in/jenniferstirpe/" target="_blank" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="https://www.linkedin.com/in/jenniferstirpe/" target="_blank" aria-label="LinkedIn"><i className="fa-brands fa-linkedin"></i></a>
           </li>
           <li className="social">
-            <a href="https://github.com/jennstirpe" target="_blank" aria-label="GitHub"><i class="fa-brands fa-github-square"></i></a>
+            <a href="https://github.com/jennstirpe" target="_blank" aria-label="GitHub"><i className="fa-brands fa-github-square"></i></a>
           </li>
         </ul>
 

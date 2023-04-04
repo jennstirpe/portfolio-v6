@@ -6,9 +6,11 @@ import { StyledHeader } from './components/header/Header.styled'
 import Nav from './components/header/Nav'
 import Heading from './components/main/Heading'
 import { StyledMain } from './components/main/Main.styled'
+import ProjectsModal from './components/modals/ProjectsModal';
+
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [ projectsOpen, setProjectsOpen ] = useState(false);
 
   return (
     <ThemeProvider theme={mainTheme}>
@@ -21,8 +23,12 @@ function App() {
 
         <StyledMain>
           <Heading />
-          <button className="main-project-btn">Projects</button>
+          <button onClick={() => setProjectsOpen(true)} className="main-project-btn">Projects</button>
         </StyledMain>
+
+        {
+          projectsOpen ? <ProjectsModal />  : null
+        }
 
       </>
     </ThemeProvider>
