@@ -1,11 +1,13 @@
 import styled from "styled-components";
 
 export const StyledHeading = styled.section`
+    position: relative;
 
     .heading-name {
         font-size: clamp(2.5rem, 1.4706rem + 4.7059vw, 5rem);
         text-transform: uppercase;
         letter-spacing: 2px;
+        color: ${({theme}) => theme.colors.textDark};
     }
 
     .heading-title {
@@ -13,6 +15,7 @@ export const StyledHeading = styled.section`
         font-weight: 300;
         letter-spacing: 4px;
         text-align: right;
+        color: ${({theme}) => theme.colors.accentDark};
     }
     
     .socials {
