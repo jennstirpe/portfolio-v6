@@ -16,8 +16,8 @@ export default function Project({ project }) {
         <p  className="project-desc">{project.description}</p>
 
         <div className="links">
-            <a className="project-link" href={project.link} target="_blank">View</a>
-            <a className="project-github" href={project.github} target="_blank">Github</a>
+            <a className="project-link link" href={project.link} target="_blank">View</a>
+            <a className="project-github link" href={project.github} target="_blank">Github</a>
         </div>
     </StyledProject>
   )
