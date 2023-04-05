@@ -4,5 +4,6 @@ export const mainTheme = {
         textDark: "#041b3d",
         accentLight: "#f1f5f4",
         accentDark: "#0a397f",
+        cardBg: "#f1f5f4",
     },
 }

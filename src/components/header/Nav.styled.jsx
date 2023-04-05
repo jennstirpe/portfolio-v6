@@ -1,6 +1,8 @@
 import styled from "styled-components";
 
 export const StyledNav = styled.nav`
+    position: relative;
+
     .nav-list {
         list-style: none;
         display: flex;

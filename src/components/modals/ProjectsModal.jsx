@@ -1,4 +1,7 @@
-import { StyledProjectsModal } from "./styled/ProjectsModal.styled"
+import { StyledProjectsModal } from "./styled/ProjectsModal.styled";
+import Project from "./Project";
+import projects from "../../projects.json";
+import CloseBtn from "../global/CloseBtn";
 
 export default function ProjectsModal({ handleClose }) {
 
@@ -8,9 +11,16 @@ export default function ProjectsModal({ handleClose }) {
 
   return (
     <StyledProjectsModal>
-      <button onClick={closeProjects}>&#10005;</button>
-      <h3>Projects</h3>
-      <div>projects list</div>
+      <CloseBtn closeModal={closeProjects} />
+      <h3 className="projects-header">Projects</h3>
+      <ul>
+        {
+          projects.map(project => {
+            return <li><Project project={project} /></li>
+          })
+        }
+      </ul>
+      
     </StyledProjectsModal>
   )
 }
