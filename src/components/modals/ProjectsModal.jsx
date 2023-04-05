@@ -13,7 +13,7 @@ export default function ProjectsModal({ handleClose }) {
     <StyledProjectsModal>
       <CloseBtn closeModal={closeProjects} />
       <h3 className="projects-header">Projects</h3>
-      <ul>
+      <ul className="projects-list">
         {
           projects.map(project => {
             return <li><Project project={project} /></li>

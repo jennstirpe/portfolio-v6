@@ -44,8 +44,8 @@ export const StyledProject = styled.article`
             color: ${({theme}) => theme.colors.textLight};
             transition: all 150ms linear;
 
-            &:hover {
-                color: ${({theme}) => theme.colors.textDark};
+            &:hover 
+                color: ${({theme}) => theme.colors.textLight}50;
             }
         }
     }

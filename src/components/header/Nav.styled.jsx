@@ -17,9 +17,12 @@ export const StyledNav = styled.nav`
             letter-spacing: 2px;
             text-transform: uppercase;
             color: ${({theme}) => theme.colors.textLight};
+            border-radius: 1rem;
+            transition: all 150ms linear;
 
             &:hover {
                 cursor: pointer;
+                color: ${({theme}) => theme.colors.textLight}50;
             }
         }
     }

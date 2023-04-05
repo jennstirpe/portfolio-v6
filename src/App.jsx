@@ -27,7 +27,7 @@ function App() {
         </StyledMain>
 
         {
-          projectsOpen ? <ProjectsModal />  : null
+          projectsOpen ? <ProjectsModal handleClose={() => setProjectsOpen(false)} />  : null
         }
 
       </>

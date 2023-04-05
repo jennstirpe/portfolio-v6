@@ -22,4 +22,8 @@ export const StyledProjectsModal = styled.section`
         padding: 1rem 0;
         color: ${({theme}) => theme.colors.accentDark};
     }
+
+    .projects-list {
+        list-style: none;
+    }
 `;
