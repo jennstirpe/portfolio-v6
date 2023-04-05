@@ -11,7 +11,7 @@ export default function ProjectsModal({ handleClose }) {
 
   return (
     <StyledProjectsModal>
-      <CloseBtn closeModal={closeProjects} />
+      <CloseBtn closeModal={closeProjects} modal="Close project modal" />
       <h3 className="projects-header">Projects</h3>
       <ul className="projects-list">
         {

@@ -7,22 +7,22 @@ export const StyledMain = styled.main`
     justify-content: center;
     align-items: center;
 
-    .main-project-btn {
+    /* .main-project-btn {
         margin-top: 2rem;
         padding: 1rem;
         font-size: 1.25rem;
-        font-weight: 700;
+        font-weight: 300;
         text-transform: uppercase;
         letter-spacing: 4px;
         border-radius: 1.75rem;
-        border: 2px solid ${({theme}) => theme.colors.textLight};
+        border: 1px solid ${({theme}) => theme.colors.textLight};
         background: transparent;
         color: ${({theme}) => theme.colors.textLight};
         transition: all 150ms linear;
 
         &:hover {
             cursor: pointer;
-            border: 2px solid transparent;
+            border: 1px solid transparent;
             background: ${({theme}) => theme.colors.accentLight}75;
             box-shadow: 1px 1.6px 2.2px rgba(0, 0, 0, 0.022),
                 2.6px 4.2px 5.6px rgba(0, 0, 0, 0.031),
@@ -30,5 +30,5 @@ export const StyledMain = styled.main`
                 11px 17.5px 23.4px rgba(0, 0, 0, 0.048),
                 30px 48px 64px rgba(0, 0, 0, 0.07);
         }
-    }
+    } */
 `;

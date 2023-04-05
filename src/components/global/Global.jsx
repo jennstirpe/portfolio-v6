@@ -1,5 +1,5 @@
 import { createGlobalStyle } from "styled-components";
-import bgimg from "../../assets/bgcloud.jpg"
+import bgimg from "../../assets/bgclouds.jpg"
 
 
 const GlobalStyles = createGlobalStyle`
@@ -17,19 +17,20 @@ const GlobalStyles = createGlobalStyle`
         width: 100vw;
         font-family: 'Quicksand', sans-serif;
         font-weight: 300;
+        background-color: #f1f5f4;
         background-image: url(${bgimg});
-        background-size: cover;
+        background-repeat: no-repeat;
         animation: slidebg 90s forwards infinite alternate;
         -webkit-animation: slidebg 90s forwards infinite alternate;
 
         @-webkit-keyframes slidebg {
-        from {background-position: top; background-size:2500px; }
-        to {background-position: -100px 0px;background-size:2750px;}
+        from {background-position: top; background-size:3500px; }
+        to {background-position: -100px 0px; background-size:3750px;}
         }
 
         @keyframes slidebg {
-        from {background-position: top; background-size:2500px; }
-        to {background-position: -100px 0px;background-size:2750px;}
+        from {background-position: top; background-size:3500px; }
+        to {background-position: -100px 0px; background-size:3750px;}
         }
     }
 `;

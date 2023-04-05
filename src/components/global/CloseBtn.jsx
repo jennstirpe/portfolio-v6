@@ -1,7 +1,7 @@
 import { StyledCloseBtn } from "./CloseBtn.styled"
 
-export default function CloseBtn({ closeModal }) {
+export default function CloseBtn({ closeModal, modal }) {
   return (
-    <StyledCloseBtn onClick={closeModal}>&#10005;</StyledCloseBtn>
+    <StyledCloseBtn onClick={closeModal} aria-label={modal}>&#10005;</StyledCloseBtn>
   )
 }
