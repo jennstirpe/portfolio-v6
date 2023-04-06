@@ -1,16 +1,17 @@
-
+import CloseBtn from "../global/CloseBtn"
+import { StyledAboutModal } from "./styled/AboutModal.styled"
 
 export default function AboutModal({ handleClose }) {
 
-    function closeProjects() {
+    function closeAbout() {
         handleClose("about")
       }
 
   return (
-    <div>
-        <button onClick={closeProjects}>&#10005;</button>
-        <h3>About me</h3>
-        <p>details</p>
-    </div>
+    <StyledAboutModal>
+        <CloseBtn closeModal={closeAbout} modal="Close about modal" />
+        <h3 className="about-header">About me</h3>
+        <p className="about-desc">details</p>
+    </StyledAboutModal>
   )
 }
