@@ -5,7 +5,7 @@ import ProjectsModal from "../modals/ProjectsModal";
 import ContactModal from "../modals/ContactModal";
 import AboutModal from "../modals/AboutModal";
 
-export default function Nav() {
+export default function Nav({ showShadow, hideShadow }) {
   const [ projectsOpen, setProjectsOpen ] = useState(false);
   const [ contactOpen, setContactOpen ] = useState(false);
   const [ aboutOpen, setAboutOpen ] = useState(false);
@@ -13,20 +13,26 @@ export default function Nav() {
   function handleOpen(modal) {
     if (modal === "projects") {
       setProjectsOpen(true)
+      showShadow()
     } else if (modal === "contact") {
       setContactOpen(true)
+      showShadow()
     } else {
       setAboutOpen(true)
+      showShadow()
     }
   }
 
   function handleClose(modal) {
     if (modal === "projects") {
       setProjectsOpen(false)
+      hideShadow()
     } else if (modal === "contact") {
       setContactOpen(false)
+      hideShadow()
     } else {
       setAboutOpen(false)
+      hideShadow()
     }
   }
 

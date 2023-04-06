@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const StyledContactModal = styled.section`
-    z-index: 5;
+    z-index: 10;
     width: 90%;
     max-width: 40rem;
     background: ${({theme}) => theme.colors.cardBg};
