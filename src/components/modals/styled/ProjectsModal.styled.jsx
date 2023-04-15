@@ -2,6 +2,7 @@ import styled from "styled-components";
 
 export const StyledProjectsModal = styled.section`
     z-index: 10;
+    width: 90%;
     max-width: 40rem;
     background: ${({theme}) => theme.colors.cardBg};
     position: absolute;
@@ -25,5 +26,16 @@ export const StyledProjectsModal = styled.section`
 
     .projects-list {
         list-style: none;
+        display: flex;
+        overflow-x: scroll;
+        scroll-snap-type: x mandatory;
+        scroll-padding: 1rem;
+        gap: 1rem;
+
+        li  {
+            flex: 0 0 100%;
+            scroll-snap-align: start;
+            width: 90%;
+        }
     }
 `;

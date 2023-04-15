@@ -13,6 +13,6 @@ export const StyledCloseBtn = styled.button`
 
     &:hover {
         cursor: pointer;
-        color: ${({theme}) => theme.colors.textLight};
+        color: ${({theme}) => theme.colors.textLight}50;
     }
 `;

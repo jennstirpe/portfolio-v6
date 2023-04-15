@@ -1,5 +1,5 @@
 import { createGlobalStyle } from "styled-components";
-import bgimg from "../../assets/bgclouds.jpg"
+import bgimg from "../../../public/assets/bgclouds.jpg"
 
 
 const GlobalStyles = createGlobalStyle`
