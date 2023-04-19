@@ -8,9 +8,9 @@ export default function AboutModal({ handleClose }) {
       }
 
   return (
-    <StyledAboutModal>
+    <StyledAboutModal className="modal">
         <CloseBtn closeModal={closeAbout} modal="Close about modal" />
-        <h3 className="about-header">About me</h3>
+        <h3 className="modal-header">About me</h3>
         <p className="about-desc">details</p>
     </StyledAboutModal>
   )

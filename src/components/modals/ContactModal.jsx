@@ -8,9 +8,9 @@ export default function ContactModal({ handleClose }) {
       }
 
   return (
-    <StyledContactModal>
+    <StyledContactModal className="modal">
         <CloseBtn closeModal={closeContact} modal="Close contact modal" />
-        <h3 className="contact-header">Send Me a Message!</h3>
+        <h3 className="modal-header">Send Me a Message!</h3>
 
         <form className="contact-form" action="https://formsubmit.io/send/d7e574ec-8e96-4097-896a-be431d3255fb" method="POST">
             <input type="hidden" name="_subject" value="New submission from portfolio site!" />

@@ -10,9 +10,9 @@ export default function ProjectsModal({ handleClose }) {
   }
 
   return (
-    <StyledProjectsModal>
+    <StyledProjectsModal className="modal">
       <CloseBtn closeModal={closeProjects} modal="Close project modal" />
-      <h3 className="projects-header">Projects</h3>
+      <h3 className="modal-header">Projects</h3>
       <ul className="projects-list">
         {
           projects.map(project => {

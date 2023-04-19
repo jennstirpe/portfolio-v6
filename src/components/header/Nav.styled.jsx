@@ -28,6 +28,6 @@ export const StyledNav = styled.nav`
     }
 
     @media (min-width: 992px) { 
-        margin-left: 45%;
+        padding-left: 45%;
     }
 `;

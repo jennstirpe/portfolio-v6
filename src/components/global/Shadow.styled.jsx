@@ -1,10 +1,15 @@
 import styled from "styled-components";
 
 export const StyledShadow = styled.div`
-    height: 100vh;
-    width: 100vw;
-    position: absolute;
+    position: fixed;
     top: 0;
-    background: ${({theme}) => theme.colors.textDark}75;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: ${({theme}) => theme.colors.textDark}50;
     z-index: 5;
+
+    &:hover {
+        cursor: auto;
+    }
 `;
