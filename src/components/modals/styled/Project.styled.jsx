@@ -51,6 +51,13 @@ export const StyledProject = styled.article`
             cursor: auto;
         }
 
+        .preview-img {
+            width: 100%;
+            margin: .5rem 0;
+            border-radius: .5rem;
+            border: 2px solid #00000010;
+        }
+
         .project-desc {
             line-height: 1.5rem;
             margin: .5rem 0;
@@ -77,6 +84,26 @@ export const StyledProject = styled.article`
                     font-weight: 400;
                 }
             }
+        }
+    }
+
+    @media (min-width: 992px) { 
+        width: 22rem;
+        flex-direction: column;
+        padding-bottom: 1rem;
+
+        .project-preview {
+            height: 10rem;
+            width: 22rem;
+            border-top-right-radius: .5rem;
+            border-bottom-left-radius: 0;
+            margin-right: 0;
+            margin-bottom: 1rem;
+        }
+
+        .project-header {
+            width: 100%;
+            padding: .75rem;
         }
     }
 `;

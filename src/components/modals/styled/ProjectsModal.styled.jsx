@@ -13,4 +13,17 @@ export const StyledProjectsModal = styled.section`
             transition: all 250ms linear;
         }
     }
+
+    @media (min-width: 992px) { 
+        max-width: 65rem !important;
+        max-height: 50rem;
+        overflow: scroll;
+        
+        .projects-list {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+            gap: 1.5rem 0;
+        }
+    }
 `;

@@ -32,8 +32,9 @@ export default function Project({ project }) {
                 <StyledShadow></StyledShadow>
                 <div className="project-info-modal">
                     <CloseBtn closeModal={closeModal} modal="Close project details" />
+                    <img className="preview-img" src={project.img} alt={project.name} />
                     <div>
-                    <h4 className="project-name">{project.name}</h4> 
+                        <h4 className="project-name">{project.name}</h4> 
                         <p className="project-tech">
                         {
                             project.tech.map(tech => {

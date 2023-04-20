@@ -40,7 +40,7 @@ const GlobalStyles = createGlobalStyle`
             background: ${({theme}) => theme.colors.cardBg};
             position: absolute;
             padding: 1rem 1.5rem;
-            top: 0;
+            top: 4rem;
             left: 0;
             right: 0;
             margin: auto;
