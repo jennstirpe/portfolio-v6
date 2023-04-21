@@ -2,12 +2,14 @@ import styled from "styled-components";
 
 export const StyledProject = styled.article`
     letter-spacing: 1px;
+    border: 2px solid transparent;
     display: flex;
     align-items: center;
+    transition: all 150ms linear;
 
     &:hover {
         box-shadow: none;
-        border: 1px solid ${({theme}) => theme.colors.accentDark}40;
+        border: 2px solid ${({theme}) => theme.colors.accentDark}40;
         border-radius: .6rem;
         cursor: pointer;
     }
@@ -91,6 +93,11 @@ export const StyledProject = styled.article`
         width: 22rem;
         flex-direction: column;
         padding-bottom: 1rem;
+
+        &:hover {
+            border: 2px solid transparent;
+            box-shadow: 0 0 1.5rem ${({theme}) => theme.colors.accentDark}40;
+        }
 
         .project-preview {
             height: 10rem;
