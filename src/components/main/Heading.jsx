@@ -6,7 +6,7 @@ export default function Heading() {
       
         <div>
           <h1 className="heading-name">Jennifer Stirpe</h1>
-          <h2 className="heading-title">Frontend Web Developer</h2>
+          <h2 className="heading-title">Front-End Web Developer</h2>
         </div>
         
         <ul className="socials">

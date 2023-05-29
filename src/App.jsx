@@ -7,6 +7,7 @@ import Nav from './components/header/Nav'
 import Heading from './components/main/Heading'
 import { StyledMain } from './components/main/Main.styled'
 import { StyledShadow } from './components/global/Shadow.styled'
+import ProjectsSection from './components/main/ProjectsSection'
 
 
 function App() {
@@ -35,6 +36,7 @@ function App() {
 
         <StyledMain>
           <Heading />
+          <ProjectsSection />
         </StyledMain>
 
       </>

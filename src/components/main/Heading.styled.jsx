@@ -2,6 +2,11 @@ import styled from "styled-components";
 
 export const StyledHeading = styled.section`
     position: relative;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 
     .heading-name {
         font-size: clamp(2.5rem, 1.4706rem + 4.7059vw, 5rem);
@@ -48,7 +53,7 @@ export const StyledHeading = styled.section`
     }
 
     @media (min-width: 992px) { 
-        display: flex;
+        flex-direction: row;
         
         .socials {
             flex-direction: column;

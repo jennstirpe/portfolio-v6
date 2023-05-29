@@ -37,7 +37,8 @@ const GlobalStyles = createGlobalStyle`
             z-index: 10;
             width: 90%;
             max-width: 40rem;
-            background: ${({theme}) => theme.colors.cardBg};
+            /* background: ${({theme}) => theme.colors.cardBg}85; */
+            background: rgb(222, 227, 233);
             position: absolute;
             padding: 1rem 1.5rem;
             top: 4rem;

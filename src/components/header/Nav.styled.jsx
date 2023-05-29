@@ -2,6 +2,8 @@ import styled from "styled-components";
 
 export const StyledNav = styled.nav`
     position: relative;
+    width: 75%;
+    margin: 0 auto;
 
     .nav-list {
         list-style: none;

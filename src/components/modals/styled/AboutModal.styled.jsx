@@ -22,7 +22,7 @@ export const StyledAboutModal = styled.section`
             transition: all 150ms linear;
             background: ${({theme}) => theme.colors.accentDark};
             border: 1px solid ${({theme}) => theme.colors.textLight};
-            color: ${({theme}) => theme.colors.accentLight};
+            color: ${({theme}) => theme.colors.textLight};
 
             &:hover {
                 background: ${({theme}) => theme.colors.cardBg};
