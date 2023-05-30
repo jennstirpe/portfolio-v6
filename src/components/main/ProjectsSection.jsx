@@ -5,11 +5,15 @@ import Project from "./Project"
 export default function ProjectsSection() {
   return (
     <StyledProjectSection>
-      {
-        projects.map(project => {
-          return  <Project key={project.id} project={project} />
-        })
-      }
+      <h2 className="section-header">Projects</h2>
+      <ul className="projects-list">
+        {
+          projects.map(project => {
+            return  <li><Project key={project.id} project={project} /></li>
+          })
+        }
+      </ul>
+      
     </StyledProjectSection>
   )
 }

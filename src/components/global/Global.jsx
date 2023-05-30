@@ -10,9 +10,7 @@ const GlobalStyles = createGlobalStyle`
     }
 
     body {
-        h1, h2, h3, h4, h5, h6 {
-            font-weight: 700;
-        }
+        position: relative;
         height: 100vh;
         width: 100vw;
         font-family: 'Quicksand', sans-serif;
@@ -33,12 +31,20 @@ const GlobalStyles = createGlobalStyle`
         to {background-position: -100px 0px; background-size:3750px;}
         }
 
+        h1, h2, h3, h4, h5, h6 {
+            font-weight: 700;
+        }
+
+        button, a {
+            &:hover {
+                cursor: pointer;
+            }
+        }
+
         .modal {
-            z-index: 10;
             width: 90%;
             max-width: 40rem;
-            /* background: ${({theme}) => theme.colors.cardBg}85; */
-            background: rgb(222, 227, 233);
+            background: #fff;
             position: absolute;
             padding: 1rem 1.5rem;
             top: 4rem;
