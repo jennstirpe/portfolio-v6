@@ -11,10 +11,11 @@ export const StyledProjectSection = styled.section`
 
     .section-header {
         color: #fff;
+        letter-spacing: 2px;
         width: 100%;
         margin: 1rem 0;
         padding-bottom: .5rem;
-        font-size: 2rem;
+        font-size: clamp(2rem, 1.6912rem + 1.4118vw, 2.75rem);
         text-transform: uppercase;
         border-bottom: 1px solid #fff;
     }

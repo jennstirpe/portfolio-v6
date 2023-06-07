@@ -11,7 +11,7 @@
         {
             "id": 20,
             "name": "Habit Tracker",
-            "img": "./assets/habit-preview.png",
+            "img": "src/assets/habit-preview.png",
             "description": "A tracker that allows users to set habits that they'd like to track. Each day, a new record is created and the user can mark habits complete for that day as they complete them. The user can view and compare previous days which can provide motivation to do the things they want to do everyday, creating lasting habits.",
             "tech": ["React"],
             "link": "https://jennstirpe.github.io/habit-tracker-v2/",
@@ -20,7 +20,7 @@
         {
             "id": 30,
             "name": "To-do List",
-            "img": "./assets/todo-preview.png",
+            "img": "src/assets/todo-preview.png",
             "description": "A traditional todo list app, a user is able to to add and delete tasks, as well as mark tasks complete. Features different filters to view only active or completed tasks as well as light and dark modes. Currently saves to a user's local storage.",
             "tech": ["React"],
             "link": "https://jennstirpe.github.io/todo-app/",
@@ -29,7 +29,7 @@
         {
             "id": 40,
             "name": "IP Address Tracker",
-            "img": "./assets/ipAddress-preview.png",
+            "img": "src/assets/ipAddress-preview.png",
             "description": "Using the IP Geolocation API by IPify and LeafletJS, a user can get the location, timezone and service provider of any IP Address they search for and see it displayed on a map.",
             "tech": ["HTML", "Sass", "JavaScript"],
             "link": "https://jennstirpe.github.io/ip-address-tracker-js/",
@@ -38,7 +38,7 @@
         {
             "id": 50,
             "name": "Tip Calculator",
-            "img": "./assets/calc-preview.png",
+            "img": "src/assets/calc-preview.png",
             "description": "Once a user enters the bill total, desired tip percentage and number of people splitting the bill, the app will calculate the tip and new total, then display the amount each person will be responsible for if it were to be split evenly.",
             "tech": ["HTML", "Sass", "JavaScript"],
             "link": "https://jennstirpe.github.io/tip-calc-app-js/",
@@ -47,7 +47,7 @@
         {
             "id": 60,
             "name": "Lights Out",
-            "img": "./assets/lightsout-preview.png",
+            "img": "src/assets/lightsout-preview.png",
             "description": "A logic game released in the mid-90's, the player's goal is to turn off all the lights in as few moves as possible. Clicking any light will toggle it and its four adjacent lights on/off.",
             "tech": ["HTML", "Sass", "JavaScript"],
             "link": "https://jennstirpe.github.io/lights-out/",

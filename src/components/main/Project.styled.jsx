@@ -48,6 +48,10 @@ export const StyledProject =  styled.div`
         .desktop-project-details {
             display: none;
         }
+        
+        .hidden {
+            opacity: 0;
+        }
 
         .mobile-project-details, .desktop-project-details {
             
@@ -85,6 +89,32 @@ export const StyledProject =  styled.div`
                         }
                     }        
                 }
+            }
+        }
+
+        .project-desc-modal {
+            height: 100%;
+            padding: 1.5rem 1rem 1rem 1rem;
+            background: #00000099;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: absolute;
+            top: 0;
+
+            .close-btn {
+                position: absolute;
+                top: .25rem;
+                right: .25rem;
+                background: none;
+                border: none;
+
+            }
+
+            .project-desc {
+                font-size: clamp(0.75rem, 0.697rem + 0.2424vw, 1rem);
+                letter-spacing: 1px;
             }
         }
     }
