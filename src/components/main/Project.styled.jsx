@@ -58,8 +58,17 @@ export const StyledProject =  styled.div`
             .project-name {
                 color: #fff;
                 font-size: 1.5rem;
-                margin: 1rem;
                 text-align: center;
+            }
+
+            .project-tech-list {
+                margin-bottom: 1rem;
+
+                .project-tech {
+                    color: #fff;
+                    margin: 0 .25rem;
+                    font-size: .85rem;
+                }
             }
 
             .project-modal-btn {

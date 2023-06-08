@@ -35,6 +35,13 @@ export default function Project({ project }) {
                 detailsActive ? (
                     <div className={descActive ? "mobile-project-details hidden" : "mobile-project-details"}>
                         <h4 className="project-name">{project.name}</h4>
+                        <div className="project-tech-list">
+                            {
+                                project.tech.map(tech => {
+                                    return <span className="project-tech">{tech}</span>
+                                })
+                            }
+                        </div>
                         <button onClick={() => setDescActive(true)} className="project-modal-btn">More Info</button>
 
                         <div className="project-links">
@@ -47,6 +54,13 @@ export default function Project({ project }) {
             
             <div className={descActive ? "desktop-project-details hidden" : "desktop-project-details"}>
                 <h4 className="project-name">{project.name}</h4>
+                <div className="project-tech-list">
+                    {
+                        project.tech.map(tech => {
+                            return <span className="project-tech">{tech}</span>
+                        })
+                    }
+                </div>
                 <button onClick={() => setDescActive(true)} className="project-modal-btn">More Info</button>
 
                 <div className="project-links">
