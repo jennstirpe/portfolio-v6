@@ -7,6 +7,7 @@ export const StyledHeading = styled.section`
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    scroll-snap-align: start;
 
     .heading-name {
         font-size: clamp(2.5rem, 1.4706rem + 4.7059vw, 5rem);

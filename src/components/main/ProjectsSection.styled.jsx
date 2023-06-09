@@ -8,6 +8,8 @@ export const StyledProjectSection = styled.section`
     flex-direction: column;
     justify-content:  center;
     align-items: center;
+    scroll-snap-align: start;
+    
 
     .section-header {
         color: #fff;
@@ -15,9 +17,14 @@ export const StyledProjectSection = styled.section`
         width: 100%;
         margin: 1rem 0;
         padding-bottom: .5rem;
-        font-size: clamp(2rem, 1.6912rem + 1.4118vw, 2.75rem);
+        font-size: clamp(1.65rem, 1.4167rem + 1.0667vw, 2.75rem);
         text-transform: uppercase;
         border-bottom: 1px solid #fff;
+
+        .projects-length {
+            opacity: .5;
+            font-size: 1rem;
+        }
     }
 
     .projects-list {
