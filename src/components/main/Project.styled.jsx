@@ -18,42 +18,47 @@ export const StyledProject =  styled.div`
         background-size: cover;
         background-position: center;
         position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
 
-        .mobile-toggle-details {
-            background: #314ac8;
-            border: none;
-            border-top-left-radius: .25rem;
-            height: 2.25rem;
-            width: 2.25rem;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            position: absolute;
-            right: 0;
-            bottom: 0;
-            box-shadow: 0 0 1rem #00000075;
-            z-index: 2;
+        &:hover {
+            cursor: pointer;
         }
 
-        .mobile-project-details, .desktop-project-details {
+        .status {
+            position: absolute;
+            background: #00000050;
+            color: white;
+            padding: 1rem;
+            text-align: center;
+            height: 100%;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+
+            .status-name {
+                font-size: 1.5rem;
+            }
+
+            .status-desc {
+                font-size: .85rem;
+            }
+        }
+
+        .project-details {
             position: relative;
             height: 100%;
+            width: 100%;
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            background: #00000095;
+            background: #000000;
         }
 
-        .desktop-project-details {
-            display: none;
-        }
-        
-        .hidden {
-            opacity: 0;
-        }
-
-        .mobile-project-details, .desktop-project-details {
+        .project-details {
             
             .project-name {
                 color: #fff;
@@ -101,6 +106,22 @@ export const StyledProject =  styled.div`
             }
         }
 
+        .card-header {
+            color: white;
+            background: #00000099;
+            width: 100%;
+            padding: .25rem 0;
+            box-shadow: 0 0 1rem #00000095;
+
+            .card-header-name, .card-header-status {
+                text-align: center;
+            }
+
+            .card-header-status {
+                font-size: .85rem;
+            }
+        }
+
         .project-desc-modal {
             height: 100%;
             padding: 1.5rem 1rem 1rem 1rem;
@@ -124,26 +145,6 @@ export const StyledProject =  styled.div`
             .project-desc {
                 font-size: clamp(0.75rem, 0.697rem + 0.2424vw, 1rem);
                 letter-spacing: 1px;
-            }
-        }
-    }
-
-    @media (min-width: 992px) {
-        .project-card {
-
-            .mobile-toggle-details, .mobile-project-details {
-                display: none
-            }
-
-            &:hover {
-                cursor: pointer;
-            }
-
-            &:hover {
-                .desktop-project-details {
-                    display: flex;
-                }
-
             }
         }
     }
