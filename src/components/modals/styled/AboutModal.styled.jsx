@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const StyledAboutModal = styled.section`
 
-    .about-desc {
+    .about-body {
         padding: 1.25rem;
         margin: 1rem;
         line-height: 1.5rem;
@@ -14,44 +14,25 @@ export const StyledAboutModal = styled.section`
         align-items: center;
         justify-content: space-evenly;
 
-        .about-resume {
-            text-decoration: none;
-            padding: .5rem 1rem;
-            border-radius: 1.5rem;
-            letter-spacing: 1px;
-            transition: all 150ms linear;
-            background: ${({theme}) => theme.colors.accentDark};
-            border: 1px solid ${({theme}) => theme.colors.textLight};
-            color: ${({theme}) => theme.colors.textLight};
-
-            &:hover {
-                background: ${({theme}) => theme.colors.cardBg};
-                color: ${({theme}) => theme.colors.textDark};
-                border: 1px solid ${({theme}) => theme.colors.textDark};
-                box-shadow: 0 .25rem .25rem ${({theme}) => theme.colors.textDark}50;
-            }
-        }
-
         .tech-list {
-            border: 1px solid ${({theme}) => theme.colors.accentDark}50;
             width: 100%;
             padding: .25rem 0;
-            border-radius: .5rem;
             list-style: none;
             display: flex;
             justify-content: space-evenly;
 
             .tech-list-item {
                 position: relative;
-                height: 3.5rem;
-                width: 3.5rem;
-                padding: .25rem;
-                border-radius: 50%;
                 display: flex;
                 justify-content: center;
                 align-items: center;
                 cursor: pointer;
                 transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+
+                i {
+                    font-size: 1.75rem;
+                    color: ${({theme}) => theme.colors.textLight};
+                }
             }
 
             .tooltip {
@@ -93,6 +74,37 @@ export const StyledAboutModal = styled.section`
             }
         }
 
+        .about-desc {
+            padding: .75rem;
+            margin: 1rem 0;
+            border-top: 1px solid ${({theme}) => theme.colors.accentDark}50;
+            border-bottom: 1px solid ${({theme}) => theme.colors.accentDark}50;
+
+            .about-desc-item {
+                display: flex;
+                align-items: flex-start;
+
+                svg {
+                    margin-right: 1rem;
+                    height: 1.15rem;
+                    width: 1.15rem;
+                    min-height: 1.15rem;
+                    min-width: 1.15rem;
+                }
+
+                p {
+                    font-size: clamp(0.65rem, 0.5758rem + 0.3394vw, 1rem);
+
+                    span {
+                        font-size: clamp(0.5rem, 0.4258rem + 0.3394vw, 0.85rem);
+                        opacity: .75;
+                        display: block;
+                        margin: 0;
+                    }
+                }
+            }
+        }
+
         .about-socials {
             width: 50%;
             display: flex;
@@ -100,7 +112,7 @@ export const StyledAboutModal = styled.section`
             list-style: none;
 
             .about-social {
-                font-size: 1.75rem;
+                font-size: 1.5rem;
 
                 a {
                     color: ${({theme}) => theme.colors.accentDark};
@@ -110,6 +122,20 @@ export const StyledAboutModal = styled.section`
                         color: ${({theme}) => theme.colors.textLight};
                     }
                 }  
+            }
+
+            .about-resume {
+                text-decoration: none;
+                padding: .25rem .75rem;
+                margin: 0 .25rem;
+                border-radius: 1.5rem;
+                transition: all 150ms linear;
+                border: 1px solid #ffffff00;
+                color: ${({theme}) => theme.colors.textLight};
+
+                &:hover {
+                    border: 1px solid ${({theme}) => theme.colors.textLight}75;
+                }
             }
         }
     }

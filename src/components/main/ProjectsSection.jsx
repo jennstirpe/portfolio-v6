@@ -9,7 +9,7 @@ export default function ProjectsSection() {
       <ul className="projects-list">
         {
           projects.map(project => {
-            return  <li><Project key={project.id} project={project} /></li>
+            return  <li key={project.id}><Project project={project} /></li>
           })
         }
       </ul>
