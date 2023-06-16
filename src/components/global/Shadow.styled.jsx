@@ -6,7 +6,7 @@ export const StyledShadow = styled.div`
     bottom: 0;
     left: 0;
     right: 0;
-    background: ${({theme}) => theme.colors.textDark}50;
+    background: #9b222660;
     z-index: 5;
 
     &:hover {

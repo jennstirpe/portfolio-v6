@@ -79,6 +79,7 @@ export const StyledAboutModal = styled.section`
             margin: 1rem 0;
             border-top: 1px solid ${({theme}) => theme.colors.accentDark}50;
             border-bottom: 1px solid ${({theme}) => theme.colors.accentDark}50;
+            color: ${({theme}) => theme.colors.textDark};
 
             .about-desc-item {
                 display: flex;

@@ -7,9 +7,9 @@ export const StyledProject =  styled.div`
     justify-content: center;
     align-items: center;
     margin: .5rem;
-    background: linear-gradient(217deg, rgb(146, 92, 254), rgba(255,0,0,0) 70.71%),
-    linear-gradient(127deg, rgb(186, 255, 255), rgba(0,255,0,0) 70.71%),
-    linear-gradient(336deg, rgb(37, 101, 204), rgba(0,0,255,0) 70.71%);
+    background: linear-gradient(217deg, #1169ac, rgba(255,0,0,0) 70.71%),
+    linear-gradient(127deg, #041b3d, rgba(0,255,0,0) 70.71%),
+    linear-gradient(336deg, #0a397f, rgba(0,0,255,0) 70.71%);
     transition: all 1s linear;
 
     .project-card {
@@ -55,7 +55,6 @@ export const StyledProject =  styled.div`
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            background: #000000;
         }
 
         .project-details {

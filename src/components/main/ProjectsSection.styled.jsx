@@ -1,7 +1,6 @@
 import styled from "styled-components";
 
 export const StyledProjectSection = styled.section`
-    background: #2b2d42;
     height: 100vh;
     padding: 4rem;
     display: flex;
@@ -9,17 +8,16 @@ export const StyledProjectSection = styled.section`
     justify-content:  center;
     align-items: center;
     scroll-snap-align: start;
-    
 
     .section-header {
-        color: #fff;
+        color: ${({theme}) => theme.colors.accentDark};
         letter-spacing: 2px;
         width: 100%;
         margin: 1rem 0;
         padding-bottom: .5rem;
         font-size: clamp(1.65rem, 1.4167rem + 1.0667vw, 2.75rem);
         text-transform: uppercase;
-        border-bottom: 1px solid #fff;
+        border-bottom: 1px solid ${({theme}) => theme.colors.accentDark};
 
         .projects-length {
             opacity: .5;

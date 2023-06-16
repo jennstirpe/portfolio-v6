@@ -20,7 +20,7 @@ export default function Project({ project }) {
 
   return (
     <StyledProject >
-        <div onClick={() => toggleAll()} aria-label="Toggle project details" className="project-card" style={!detailsActive ? {"backgroundImage": `url(${project.img})`} : null}>
+        <div onClick={() => toggleAll()} aria-label="Toggle project details" className="project-card" style={!detailsActive && !descActive ? {"backgroundImage": `url(${project.img})`} : null}>
 
             {
                 detailsActive ? (
