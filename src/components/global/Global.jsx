@@ -13,7 +13,7 @@ const GlobalStyles = createGlobalStyle`
         position: relative;
         height: 100vh;
         width: 100vw;
-        font-family: 'Quicksand', sans-serif;
+        font-family: ${({theme}) => theme.fonts.main};
         font-weight: 300;
         background-color: #f1f5f4;
         background-image: url(${bgimg});
@@ -41,10 +41,14 @@ const GlobalStyles = createGlobalStyle`
             }
         }
 
+        input, textarea {
+            font-family: ${({theme}) => theme.fonts.main};
+        }
+
         .modal {
             width: 90%;
             max-width: 40rem;
-            background: #fff;
+            background: ${({theme})  => theme.colors.white};
             position: absolute;
             padding: 1rem 1.5rem;
             top: 4rem;

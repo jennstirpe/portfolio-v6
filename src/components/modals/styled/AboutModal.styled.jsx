@@ -40,7 +40,7 @@ export const StyledAboutModal = styled.section`
                 text-align: center;
                 top: 0;
                 font-size: .75rem;
-                background: #ffffff;
+                background: ${({theme}) => theme.colors.white};
                 width: 5rem;
                 padding: .25rem .5rem;
                 border-radius: .5rem;
@@ -55,7 +55,7 @@ export const StyledAboutModal = styled.section`
                 content: "";
                 height: .5rem;
                 width: .5rem;
-                background: #ffffff;
+                background: ${({theme}) => theme.colors.white};
                 bottom: -.18rem;
                 left: 50%;
                 transform: translate(-50%) rotate(45deg);
@@ -117,7 +117,7 @@ export const StyledAboutModal = styled.section`
 
                 a {
                     color: ${({theme}) => theme.colors.accentDark};
-                    transition: all 150ms linear;
+                    transition: ${({theme}) => theme.transition};
                     
                     &:hover {
                         color: ${({theme}) => theme.colors.textLight};
@@ -130,8 +130,8 @@ export const StyledAboutModal = styled.section`
                 padding: .25rem .75rem;
                 margin: 0 .25rem;
                 border-radius: 1.5rem;
-                transition: all 150ms linear;
-                border: 1px solid #ffffff00;
+                transition: ${({theme}) => theme.transition};
+                border: 1px solid ${({theme}) => theme.colors.white}00;
                 color: ${({theme}) => theme.colors.textLight};
 
                 &:hover {

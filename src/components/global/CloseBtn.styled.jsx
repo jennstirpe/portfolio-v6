@@ -9,7 +9,7 @@ export const StyledCloseBtn = styled.button`
     border: none;
     background: transparent;
     color: ${({theme}) => theme.colors.textDark};
-    transition: all 150ms linear;
+    transition: ${({theme}) => theme.transition};
 
     &:hover {
         cursor: pointer;

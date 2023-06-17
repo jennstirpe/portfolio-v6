@@ -28,8 +28,8 @@ export const StyledProject =  styled.div`
 
         .status {
             position: absolute;
-            background: #00000050;
-            color: white;
+            background: ${({theme}) => theme.colors.black}50;
+            color: ${({theme}) => theme.colors.white};
             padding: 1rem;
             text-align: center;
             height: 100%;
@@ -60,7 +60,7 @@ export const StyledProject =  styled.div`
         .project-details {
             
             .project-name {
-                color: #fff;
+                color: ${({theme}) => theme.colors.white};
                 font-size: 1.5rem;
                 text-align: center;
             }
@@ -69,7 +69,7 @@ export const StyledProject =  styled.div`
                 margin-bottom: 1rem;
 
                 .project-tech {
-                    color: #fff;
+                    color: ${({theme}) => theme.colors.white};
                     margin: 0 .25rem;
                     font-size: .85rem;
                 }
@@ -77,16 +77,16 @@ export const StyledProject =  styled.div`
 
             .project-modal-btn {
                 background: none;
-                border: 2px solid white;
+                border: 2px solid ${({theme}) => theme.colors.white};
                 padding: .75rem 1rem;
                 font-size: 1rem;
                 border-radius: 2rem;
-                color: #fff;
+                color: ${({theme}) => theme.colors.white};
                 margin-bottom: 1.25rem;
-                transition: all 150ms linear;
+                transition: ${({theme}) => theme.transition};
 
                 &:hover {
-                    background: #ffffff40;
+                    background: ${({theme}) => theme.colors.white}40;
                 }
             }
 
@@ -98,7 +98,7 @@ export const StyledProject =  styled.div`
                 .project-link {
                     &:hover {
                         svg {
-                            stroke: #ffffff75;
+                            stroke: ${({theme}) => theme.colors.white}75;
                         }
                     }        
                 }
@@ -106,11 +106,11 @@ export const StyledProject =  styled.div`
         }
 
         .card-header {
-            color: white;
-            background: #00000099;
+            color: ${({theme}) => theme.colors.white};
+            background: ${({theme}) => theme.colors.black}99;
             width: 100%;
             padding: .25rem 0;
-            box-shadow: 0 0 1rem #00000095;
+            box-shadow: 0 0 1rem ${({theme}) => theme.colors.black}95;
 
             .card-header-name, .card-header-status {
                 text-align: center;
@@ -124,8 +124,8 @@ export const StyledProject =  styled.div`
         .project-desc-modal {
             height: 100%;
             padding: 1.5rem 1rem 1rem 1rem;
-            background: #00000099;
-            color: white;
+            background: ${({theme}) => theme.colors.black}99;
+            color: ${({theme}) => theme.colors.white};
             display: flex;
             justify-content: center;
             align-items: center;

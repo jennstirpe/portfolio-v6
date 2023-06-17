@@ -9,7 +9,6 @@ export const StyledContactModal = styled.section`
         input, textarea {
             padding: .5rem;
             margin: .35rem .25rem;
-            font-family: 'Quicksand', sans-serif;
             border-radius: .5rem;
             outline: none;
             border: none;

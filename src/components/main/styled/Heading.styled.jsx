@@ -39,7 +39,7 @@ export const StyledHeading = styled.section`
             i {
                 font-size: 2rem;
                 color: ${({theme}) => theme.colors.accentDark};
-                transition: all 150ms linear;
+                transition: ${({theme}) => theme.transition};
 
                 &:hover {
                     color: ${({theme}) => theme.colors.textLight};

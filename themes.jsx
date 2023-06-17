@@ -6,5 +6,11 @@ export const mainTheme = {
         accentDark: "#0a397f",
         cardBg: "#f1f5f4",
         white: "#ffffff",
+        black: "#000000"
     },
+    fonts: {
+        main: "'Quicksand', sans-serif",
+        accent: ""
+    },
+    transition: "all 150ms linear"
 }

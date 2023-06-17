@@ -20,7 +20,7 @@ export const StyledNav = styled.nav`
             text-transform: uppercase;
             color: ${({theme}) => theme.colors.textLight};
             border-radius: 1rem;
-            transition: all 150ms linear;
+            transition: ${({theme}) => theme.transition};
 
             &:hover {
                 cursor: pointer;
