@@ -1,4 +1,4 @@
-import { StyledHeading } from "./Heading.styled"
+import { StyledHeading } from "./styled/Heading.styled"
 
 export default function Heading() {
   return (

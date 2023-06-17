@@ -1,4 +1,4 @@
-import { StyledProjectSection } from "./ProjectsSection.styled"
+import { StyledProjectSection } from "./styled/ProjectsSection.styled"
 import projects from '../../projects.json'
 import Project from "./Project"
 

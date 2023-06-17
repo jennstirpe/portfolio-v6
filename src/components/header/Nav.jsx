@@ -1,6 +1,6 @@
 
 import { useState } from "react"
-import { StyledNav } from "./Nav.styled"
+import { StyledNav } from "./styled/Nav.styled"
 import ContactModal from "../modals/ContactModal";
 import AboutModal from "../modals/AboutModal";
 

@@ -5,5 +5,6 @@ export const mainTheme = {
         accentLight: "#f1f5f4",
         accentDark: "#0a397f",
         cardBg: "#f1f5f4",
+        white: "#ffffff",
     },
 }

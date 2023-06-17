@@ -1,6 +1,5 @@
 import { useState } from "react"
-import { StyledProject } from "./Project.styled"
-import CloseBtn from "../global/CloseBtn";
+import { StyledProject } from "./styled/Project.styled"
 
 export default function Project({ project }) {
     const [detailsActive, setDetailsActive] = useState(false);

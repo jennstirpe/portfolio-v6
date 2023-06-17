@@ -2,10 +2,10 @@ import { useState } from 'react'
 import GlobalStyles from './components/global/Global'
 import { ThemeProvider } from "styled-components"
 import { mainTheme } from "../themes"
-import { StyledHeader } from './components/header/Header.styled'
+import { StyledHeader } from './components/header/styled/Header.styled'
 import Nav from './components/header/Nav'
 import Heading from './components/main/Heading'
-import { StyledMain } from './components/main/Main.styled'
+import { StyledMain } from './components/main/styled/Main.styled'
 import { StyledShadow } from './components/global/Shadow.styled'
 import ProjectsSection from './components/main/ProjectsSection'
 

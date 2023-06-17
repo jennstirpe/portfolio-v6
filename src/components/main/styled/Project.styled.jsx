@@ -144,6 +144,8 @@ export const StyledProject =  styled.div`
             .project-desc {
                 font-size: clamp(0.75rem, 0.697rem + 0.2424vw, 1rem);
                 letter-spacing: 1px;
+                height: 98%;
+                overflow: scroll;
             }
         }
     }
