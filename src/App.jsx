@@ -7,11 +7,12 @@ import Nav from './components/header/Nav'
 import Heading from './components/main/Heading'
 import { StyledMain } from './components/main/styled/Main.styled'
 import { StyledShadow } from './components/global/Shadow.styled'
-import ProjectsSection from './components/main/ProjectsSection'
+import WorkModal from './components/modals/WorkModal'
 
 
 function App() {
   const [ modalOpen, setModalOpen ] = useState(false);
+  const [ workModal, setWorkModal ] = useState(false)
 
   function showShadow() {
     setModalOpen(true);
@@ -19,6 +20,14 @@ function App() {
 
   function hideShadow()  {
     setModalOpen(false)
+  }
+
+  function toggleWork() {
+    if (workModal) {
+      setWorkModal(false)
+    } else {
+      setWorkModal(true)
+    }
   }
 
   return (
@@ -36,7 +45,11 @@ function App() {
 
         <StyledMain>
           <Heading />
-          <ProjectsSection />
+          <button className={workModal ? "work-modal_btn open" : "work-modal_btn"} onClick={toggleWork}>{workModal ? "Close" : "Work"}</button>
+          {
+            workModal ? <WorkModal /> : null
+          }
+          
         </StyledMain>
 
       </>

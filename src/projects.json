@@ -1,14 +1,5 @@
  [
         {
-            "id": 10,
-            "name": "Flashcards",
-            "img": "",
-            "description": "A tracker that allows users to set habits that they'd like to track. Each day, a new record is created and the user can mark habits complete for that day as they complete them. The user can view and compare previous days which can provide motivation to do the things they want to do everyday, creating lasting habits.",
-            "tech": ["React"],
-            "link": "https://jennstirpe.github.io/habit-tracker-v2/",
-            "github": "https://github.com/jennstirpe/habit-tracker-v2"
-        },
-        {
             "id": 20,
             "name": "Habit Tracker",
             "img": "src/assets/habit-preview.png",

@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const StyledHeading = styled.section`
     position: relative;
-    height: 100vh;
+    height: 87vh;
     display: flex;
     flex-direction: column;
     justify-content: center;

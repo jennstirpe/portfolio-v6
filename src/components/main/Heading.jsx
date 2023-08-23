@@ -4,7 +4,7 @@ export default function Heading() {
   return (
     <StyledHeading>
       
-        <div>
+        <div className="animate__animated animate__fadeInUp">
           <h1 className="heading-name">Jennifer Stirpe</h1>
           <h2 className="heading-title">Front-End Web Developer</h2>
         </div>

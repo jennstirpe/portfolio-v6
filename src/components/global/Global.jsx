@@ -49,6 +49,7 @@ const GlobalStyles = createGlobalStyle`
             width: 90%;
             max-width: 40rem;
             background: ${({theme})  => theme.colors.white};
+            /* backdrop-filter: blur(30px); */
             position: absolute;
             padding: 1rem 1.5rem;
             top: 4rem;

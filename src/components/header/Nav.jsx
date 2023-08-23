@@ -11,9 +11,11 @@ export default function Nav({ showShadow, hideShadow }) {
   function handleOpen(modal) {
     if (modal === "contact") {
       setContactOpen(true)
+      setAboutOpen(false)
       showShadow()
     } else {
       setAboutOpen(true)
+      setContactOpen(false)
       showShadow()
     }
   }
