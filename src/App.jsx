@@ -45,7 +45,9 @@ function App() {
 
         <StyledMain>
           <Heading />
-          <button className={workModal ? "work-modal_btn open" : "work-modal_btn"} onClick={toggleWork}>{workModal ? "Close" : "Work"}</button>
+          <button className={workModal ? "work-modal_btn open" : "work-modal_btn"} onClick={toggleWork}>
+            {workModal ? "Close x" : "Work"}
+          </button>
           {
             workModal ? <WorkModal /> : null
           }

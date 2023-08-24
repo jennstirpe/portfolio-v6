@@ -1,7 +1,6 @@
 import styled from "styled-components";
 
 export const StyledWorkModal = styled.ul`
-
     backdrop-filter: blur(10px);
     width: 100%;
     height: 75vh;
@@ -14,6 +13,7 @@ export const StyledWorkModal = styled.ul`
     align-items: center;
     justify-content: center;
     overflow: scroll;
+    padding: 1rem;
 
     .project {
         display: flex;
@@ -25,15 +25,14 @@ export const StyledWorkModal = styled.ul`
         width: 250px;
         border-radius: 10px;
         background: #ffffff50;
-        cursor: pointer;
         transition: 400ms;
         border: 1px solid black;
 
         &:hover {
             transform: scale(1.1, 1.1);
+            cursor: pointer;
         }
             
-
         .project-title {
             font-size: 1em;
             font-weight: 700;
@@ -42,8 +41,21 @@ export const StyledWorkModal = styled.ul`
         .project-tech {
             font-size: .7em;
         }
-    }
 
+        .project-link {
+            margin: 0 1rem;
+        }
+
+        .project-desc {
+            background: #00000010;
+            height: 4rem;
+            font-size: .85rem;
+            overflow: scroll;
+            line-height: 1rem;
+            text-align: left;
+            padding: .25rem;
+        }
+    }
 
     @media (min-width: 992px) { 
         width: 90%;
@@ -52,7 +64,5 @@ export const StyledWorkModal = styled.ul`
         right: 0;
         margin: 0 auto;
         flex-direction: row;
-        padding: 1rem;
     }
-
 `;
